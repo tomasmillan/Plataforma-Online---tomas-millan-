@@ -12,69 +12,85 @@
         <script src="https://kit.fontawesome.com/e1cd5ca43b.js" crossorigin="anonymous"></script>
         <!--Fav Icon-->
         <link rel="short icon" type="image/x-icon" href="img/auris-icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <nav>
-                    <!-- Logo -->
-                    <div class="logo"><a href="index.html">isiuey</a></div>
-                <div class="menu">
-                    <ul>
-                    <!-- menu -->
-                            <li class="nav__item"><a  href="index.html">Inicio</a></li>
-                            <li class="nav__item"><a  href="mision.html">Mision</a></li>
-                            <li class="nav__item"><a  href="galeria.html">Galeria</a></li>
-                            <li class="nav__item"><a  href="artistas.html">Artistas</a></li>
-                            <li class="nav__item"><a  href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>             
-                    <!-- buscador -->
-                    <div class="s-rch"><input type="search" placeholder="Buscar..." id="search"></div>
-            </nav>
-        </div>
-    </header>
-    <main>
-      <div class="a-section">
-          <div class="a-title">
-            <h2>escucha a tus artistas favoritos!</h2>
-          </div>
-          <div class="a-subtitle"><h4>haciendo click en la imagen</h4></div>
-        <ul>
-            <li><a href="galeria.html"><img src="img/1.jpeg" alt=""></a></li>
-            <li><a href="galeria.html"><img src="img/2.jpeg" alt=""></a></li>
-            <li><a href="galeria.html"><img src="img/3.jpeg" alt=""></a></li>
-            <br>
-            <li><a href="galeria.html"><img src="img/4.jpeg" alt=""></a></li>
-            <li><a href="galeria.html"><img src="img/5.jpeg" alt=""></a></li>
-            <li><a href="galeria.html"><img src="img/6.jpeg" alt=""></a></li>
-        </ul>
-      </div>
-    </main>
-    <footer>
-        <div class="f-ter">
-            <div class="n-ter">
-                <ul class="f-list">
-                    <li><a  href="index.html">Inicio</a></li>
-                    <li><a  href="mision.html">Mision</a></li>
-                    <li><a  href="galeria.html">Galeria</a></li>
-                    <li><a  href="artistas.html">Artistas</a></li>
-                    <li><a  href="contacto.html">Contacto</a></li>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><h3>isiuey</h3></a>
+            </div>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="mision.html">Mision</a></li>
+                    <li><a href="artistas.html">Artistas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div class="rrss">
-                <h3>buscanos en las redes</h3>
-                <div class="icon">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+            <div class="hamburger">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-            <div class="info"><p>isiuey<br>una plataforma colaborativa<br>sumate a descubrir</p></div>
         </div>
-    </footer>
-    <div class="copy">
-        <p>CODER Proyecto Final |  Desarrollada por TOMI  |   &#169; 2022</p>
+ <section class="container">
+     <div class="profile">
+         <img src="img/perfil.jpg" id="profile">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error iusto voluptatum, minima asperiores voluptas est modi enim praesentium, vel voluptatibus esse, eaque itaque ullam excepturi. Architecto explicabo delectus consectetur?</p>
+         <button class="a-btn">Seguir</button>
+     </div>
+     <div class="contact">
+         <form action="#" class="form">
+             <fieldset>
+                 <legend>Contacto</legend>
+                 <label for="f-name">Nombre</label>
+                 <input type="text" placeholder="Juan" name="f-name">
+                 <label for="f-lastname">Apellido</label>
+                 <input type="text" placeholder="Gomez" name="f-lastname">
+                 <label for="f-email">Email</label>
+                 <input type="text" placeholder="juangomez@isiuey.com" name="f-email">
+                 <input type="textarea" name="f-comment" placeholder="Escriba aqui su comentario">
+                 <input type="submit" value="enviar" class="btn">
+             </fieldset>
+         </form>
+     </div>
+ </section>
+ <footer class="footer">
+     <div class="row">
+     <div class="col-3">
+         <div class="nav__ft">
+             <ul>
+                 <li><a href="index.html">inicio</a></li>
+                 <li><a href="galeria.html">reproductor</a></li>
+                 <li><a href="mision.html">mision</a></li>
+                 <li><a href="artistas.html">artistas</a></li>
+                 <li><a href="contacto.html">contacto</a></li>
+             </ul>
+         </div>
+     </div>
+     <div class="col-3">
+         <div class="socialmedia">
+             <h4>Nuestras Redes</h4>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-spotify"></i>
+         </div>
+     </div>
+     <div class="col-3">
+         <h4>Otros</h4>
+         <ul>
+             <li><a href="#">Contribui</a></li>
+             <li><a href="#">Preguntas Frecuentes</a></li>
+             <li><a href="#">Trabaja con nosotros</a></li>
+         </ul>
+     </div>
     </div>
+    <div class="copy">TML Co. | Coderhouse proyecto final | 2022</div>
+ </footer>
+ <script src="script.js"></script>
 </body>
 </html>

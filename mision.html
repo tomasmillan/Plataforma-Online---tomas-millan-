@@ -12,64 +12,90 @@
         <script src="https://kit.fontawesome.com/e1cd5ca43b.js" crossorigin="anonymous"></script>
         <!--Fav Icon-->
         <link rel="short icon" type="image/x-icon" href="img/auris-icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <nav>
-                    <!-- Logo -->
-                    <div class="logo"><a href="index.html"><h1>isiuey</h1></a></div>
-                <div class="menu">
-                    <ul>
-                    <!-- menu -->
-                            <li class="nav__item"><a  href="index.html">Inicio</a></li>
-                            <li class="nav__item"><a  href="mision.html">Mision</a></li>
-                            <li class="nav__item"><a  href="galeria.html">Galeria</a></li>
-                            <li class="nav__item"><a  href="artistas.html">Artistas</a></li>
-                            <li class="nav__item"><a  href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>             
-                    <!-- buscador -->
-                    <div class="s-rch"><input type="search" placeholder="Buscar..." id="search"></div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="mision">
-               <div class="m-title"><h2>mision</h2></div>
-               <div class="m-img"><img src="img/perfil.jpg" alt="foto de perfil"></div>
-               <div class="m-text">       
-                <p>Isiuey busca una nueva manera de poder compartir la musica, haciendo una plataforma colaborativa, en donde los artistas emergentes puedan tener un espacio para compartir su musica. En donde puedan recibir colaboraciones de los oyentes, medio a la gorra. Te invito a conocer mas sobre ISIUEY...</p>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><h3>isiuey</h3></a>
             </div>
-        </div>
-        <div class="fundador">
-            <h2>Fundador</h2>
-            <h5> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius officiis dolorem a quod autem ducimus vitae accusamus odit, saepe error reiciendis fuga cupiditate, perferendis est enim tempore assumenda ratione consequatur voluptatibus quam eaque maiores. Explicabo molestias eaque distinctio vero laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores excepturi vitae dolore voluptates velit natus alias quos perspiciatis animi!</h5>
-        </div>
-    </main>
-    <footer>
-        <div class="f-ter">
-            <div class="n-ter">
-                <ul class="f-list">
-                    <li><a  href="index.html">Inicio</a></li>
-                    <li><a  href="mision.html">Mision</a></li>
-                    <li><a  href="galeria.html">Galeria</a></li>
-                    <li><a  href="artistas.html">Artistas</a></li>
-                    <li><a  href="contacto.html">Contacto</a></li>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="mision.html">Mision</a></li>
+                    <li><a href="artistas.html">Artistas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div class="rrss">
-                <h3>buscanos en las redes</h3>
-                <div class="icon">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+            <div class="hamburger">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
-    </footer>
-    <div class="copy">
-        <p>CODER Proyecto Final |  Desarrollada por TOMI  |   &#169; 2022</p>
+ <section class="container">
+     <div class="mision">
+         <div class="col-2 left">
+             <img src="img/perfil.jpg" alt="fundador">
+         </div>
+         <div class="col-2 right">
+             <h3 class="title">Mision</h2>
+             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima accusantium quae ratione culpa illo!</p>
+             <button class="btn"><a href="mision.html">saber mas</a></button>
+            </div>
+     </div>
+     <div class="contact">
+         <form action="#" class="form">
+             <fieldset>
+                 <legend>Contacto</legend>
+                 <label for="f-name">Nombre</label>
+                 <input type="text" placeholder="Juan" name="f-name">
+                 <label for="f-lastname">Apellido</label>
+                 <input type="text" placeholder="Gomez" name="f-lastname">
+                 <label for="f-email">Email</label>
+                 <input type="text" placeholder="juangomez@isiuey.com" name="f-email">
+                 <input type="textarea" name="f-comment" placeholder="Escriba aqui su comentario">
+                 <input type="submit" value="enviar" class="btn">
+             </fieldset>
+         </form>
+     </div>
+ </section>
+ <footer class="footer">
+     <div class="row">
+     <div class="col-3">
+         <div class="nav__ft">
+             <ul>
+                 <li><a href="index.html">inicio</a></li>
+                 <li><a href="galeria.html">reproductor</a></li>
+                 <li><a href="mision.html">mision</a></li>
+                 <li><a href="artistas.html">artistas</a></li>
+                 <li><a href="contacto.html">contacto</a></li>
+             </ul>
+         </div>
+     </div>
+     <div class="col-3">
+         <div class="socialmedia">
+             <h4>Nuestras Redes</h4>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-spotify"></i>
+         </div>
+     </div>
+     <div class="col-3">
+         <h4>Otros</h4>
+         <ul>
+             <li><a href="#">Contribui</a></li>
+             <li><a href="#">Preguntas Frecuentes</a></li>
+             <li><a href="#">Trabaja con nosotros</a></li>
+         </ul>
+     </div>
     </div>
+    <div class="copy">TML Co. | Coderhouse proyecto final | 2022</div>
+ </footer>
+ <script src="script.js"></script>
 </body>
 </html>

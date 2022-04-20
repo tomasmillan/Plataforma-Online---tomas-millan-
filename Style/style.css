@@ -292,26 +292,91 @@ input[type=submit] {
   background-repeat: no-repeat;
   height: 100vh;
   text-align: center;
+  transition: 0.5 all;
  }
  .plataforma{
    display: grid;
    grid-template-columns: auto auto;
  }
- .left{
+ .plataforma .left{
   grid-column: 1 / 2;
-  line-height: 3rem;
   display: flex;
-  flex-direction: column;
   align-content: center;
+  flex-direction: column;
   justify-content: center
  }
  .right{
    grid-column: 2 / 4;
    display: flex;
    justify-content: center;
+   flex-direction: column;
+   line-height: 2rem;
+   margin: 0 4rem;
  }
- .right img{
-   width: 70%;
+ .left img{
+   width: 90%;
+   padding: 0.4rem;
+   justify-content: center;
+ }
+ .animate__bounceInLeft{
+  --animate-duration: 2s;
+ }
+ .testimonials{
+   display: flex;
+   flex-direction: row;
    padding: 2rem;
- }
+  }
+  .testimonials :hover{
+    transform: scale(1.1);
+  }
+  .contact{
+    display: flex;
+    justify-content: center;
+  }
+  .contact fieldset{
+    border: none;
+  }
+  .row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #aeaeae;
+    margin: 5rem;
+    border-radius: 3rem;
+    padding: 2rem;
+  }
+  .profile p{
+    line-height: 2rem;
+    padding: 0 8rem;
+  }
+  #profile{
+    width: 50%;
+  }
+  .profile button{
+    border: none;
+    border-radius: 2rem;
+    padding: 6px 12px;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  .a-btn:hover{
+    background: #538c16;
+    transform: scale(1.2);
+    transition: 0.7;
+    transition-delay: 0.7;
+  }
+  iframe{
+    margin-top: 5rem;
+    padding: 3rem;
+  }
+  
+
+ 
 }
